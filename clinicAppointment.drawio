@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-12T11:29:30.401Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="irAUnv-gN6CNnpJ0nB2Y" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-12T11:34:22.997Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="jNzfIEqWqvbDvv6J2EDJ" version="24.4.0" type="github">
   <diagram name="Page-1" id="2Ikt_EC1GCKtKshhTgcY">
     <mxGraphModel dx="1487" dy="390" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -30,8 +30,8 @@
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-5" value="LOGIN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="360" y="190" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3c0A9AnZrhXUPr6MrEy5-8" value="HOMEPAGE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="210" y="320" width="120" height="60" as="geometry" />
+        <mxCell id="3c0A9AnZrhXUPr6MrEy5-8" value="PROFILE PAGE&lt;div&gt;-profile&lt;br&gt;&lt;div&gt;-appointments&lt;/div&gt;&lt;div&gt;-book appointment&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="320" width="180" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
