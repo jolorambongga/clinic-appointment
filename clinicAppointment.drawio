@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-12T12:27:06.980Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="GMU7yuxReDRdYMcPf8f-" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-12T12:27:18.307Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="WtM9WT9U2zZ7Qx9lzPaV" version="24.4.0" type="github">
   <diagram name="Page-1" id="2Ikt_EC1GCKtKshhTgcY">
     <mxGraphModel dx="1804" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -91,7 +91,7 @@
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3c0A9AnZrhXUPr6MrEy5-30" target="3c0A9AnZrhXUPr6MrEy5-48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="3c0A9AnZrhXUPr6MrEy5-30" value="DASHBOARD PAGE&lt;div&gt;-dashboard&lt;/div&gt;&lt;div&gt;-profile&lt;/div&gt;&lt;div&gt;-view appointment&lt;/div&gt;&lt;div&gt;-edit services&lt;/div&gt;&lt;div&gt;-logs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="3c0A9AnZrhXUPr6MrEy5-30" value="DASHBOARD PAGE&lt;div&gt;-dashboard&lt;/div&gt;&lt;div&gt;-profile&lt;/div&gt;&lt;div&gt;-view appointment&lt;/div&gt;&lt;div&gt;-edit admins&lt;/div&gt;&lt;div&gt;-edit services&lt;/div&gt;&lt;div&gt;-logs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="500" y="520" width="200" height="110" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-38" value="PROFILE&lt;div&gt;-full name&lt;/div&gt;&lt;div&gt;birthday&lt;/div&gt;&lt;div&gt;-complete address&lt;/div&gt;&lt;div&gt;-email&lt;/div&gt;&lt;div&gt;-contact number&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-username&lt;/div&gt;&lt;div&gt;-password&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;-edit acc&lt;/div&gt;&lt;div&gt;-delete acc&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
