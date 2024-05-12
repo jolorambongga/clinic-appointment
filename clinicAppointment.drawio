@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-12T12:31:28.152Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="_1b4KSM0T_Fhs4k-Lq7B" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-12T12:31:37.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="AT5zpyNj6VMuPxY3Cz5-" version="24.4.0" type="github">
   <diagram name="Page-1" id="2Ikt_EC1GCKtKshhTgcY">
     <mxGraphModel dx="1804" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -124,16 +124,16 @@
           <mxGeometry x="890" y="795" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-51" value="VIEW APPOINTMENTS&lt;div&gt;-approve&lt;/div&gt;&lt;div&gt;-deny&lt;/div&gt;&lt;div&gt;-add comment&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="950" width="180" height="80" as="geometry" />
+          <mxGeometry x="370" y="1040" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-53" value="EDIT ADMINS&lt;div&gt;-add admin&lt;/div&gt;&lt;div&gt;-remove admin&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="760" y="950" width="180" height="80" as="geometry" />
+          <mxGeometry x="760" y="1040" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-55" value="EDIT SERVICES&lt;div&gt;-add service&lt;/div&gt;&lt;div&gt;-delete service&lt;/div&gt;&lt;div&gt;-edit service&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="730" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-57" value="LOGS&lt;div&gt;-user register&lt;/div&gt;&lt;div&gt;-user login&lt;/div&gt;&lt;div&gt;-user logout&lt;/div&gt;&lt;div&gt;-edits&lt;/div&gt;&lt;div&gt;-ID, user, location, device, session, date, time&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="830" width="180" height="140" as="geometry" />
+          <mxGeometry x="560" y="870" width="180" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
