@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-12T11:47:17.566Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="kqBHwuaL0W7p7FyAQSa0" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-12T11:47:24.243Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="OL_z7NgTR0xH_cPPVOXG" version="24.4.0" type="github">
   <diagram name="Page-1" id="2Ikt_EC1GCKtKshhTgcY">
     <mxGraphModel dx="1558" dy="433" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -16,7 +16,7 @@
           <mxGeometry x="210" y="90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-2" value="Clinic Appointment System Flow" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=0;fontFamily=Helvetica;fontSize=28;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="40" width="460" height="30" as="geometry" />
+          <mxGeometry x="40" y="30" width="460" height="30" as="geometry" />
         </mxCell>
         <mxCell id="3c0A9AnZrhXUPr6MrEy5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3c0A9AnZrhXUPr6MrEy5-4" target="3c0A9AnZrhXUPr6MrEy5-8">
           <mxGeometry relative="1" as="geometry" />
