@@ -2,12 +2,12 @@
 ``made using php | ajax | bootstrap | jQuery``
 ## Features Includes:
 ### Admin:
-- create new procedures
-- read existing procedures
-- update existing procedures
-- delete existing procedures
+- **C**reate new procedures
+- **R**ead existing procedures
+- **U**pdate existing procedures
+- **D**elete existing procedures
 ### Client:
-- create new appointments
-- read existing appointments
-- update existing appointments
-- delete existing appointments
+- **C**reate new appointments
+- **R**ead existing appointments
+- **U**pdate existing appointments
+- **D**elete existing appointments
