@@ -5,6 +5,13 @@
 - [ ] [Admin Account](#admin)
   - [ ] Admin Dashboard
   - [ ] Admin Profile
+  - [ ] View Client Appointments
+  - [ ] Edit Admins
+  - [ ] Edit Services
+- [ ] [Client Account](#client)
+  - [ ] Client Profile
+  - [ ] View Appointments
+  - [ ] Book Appointments
 -----
 <a name="admin" />
 
