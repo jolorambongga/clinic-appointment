@@ -90,16 +90,12 @@
     </aside>
     <!-- main content -->
     <div class="main p-3">
-      <div class="text-center">
-        <h1>
-          <!-- Sidebar Bootstrap 5 -->
-        </h1>
-      </div>
       <!-- table -->
       <div class="container">
         <div class="table-container">
-          <h1 class="table-title">User's Appointments</h1>
-          <button class="btn btn-primary mb-3 float-end" type="sbumit" name="submit">Add New Service</button>
+          <h1 class="table-title">Edit Services</h1>
+          <button class="btn btn-primary mb-3 float-end" type="button" data-bs-toggle="modal"
+            data-bs-target="#modalAddService">Add New Service</button>
           <table class="table table-striped table-hover">
             <thead>
               <tr>
@@ -135,6 +131,30 @@
               <!-- Add more rows as needed -->
             </tbody>
           </table>
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="modal fade" id="modalAddService" tabindex="-1" aria-labelledby="modalAddService" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalAddService">Add New Service</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="inputServiceName" class="form-label">Service Name</label>
+                <input type="text" class="form-control" id="inputServiceName" placeholder="Enter service name">
+                <pre></pre>
+                <label for="inputServicePrice" class="form-label">Service Price</label>
+                <input type="text" class="form-control" id="inputServicePrice" placeholder="Enter service price">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Save</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

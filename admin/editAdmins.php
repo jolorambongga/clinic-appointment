@@ -98,7 +98,7 @@
       <!-- table -->
       <div class="container">
         <div class="table-container">
-          <h1 class="table-title">User's List</h1>
+          <h1 class="table-title">Admin's List</h1>
           <button class="btn btn-primary mt-3 mb-3 float-end" type="sbumit" name="submit">Add User</button>
           <table class="table table-striped table-hover">
             <thead>
