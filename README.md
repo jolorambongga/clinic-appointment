@@ -1,9 +1,11 @@
 # Clinic Appointment System
 ``made using php | ajax | bootstrap | jQuery``
 ## Features Includes:
-- [ ] Login
-- [ ] Register
-- [ ] Modules
+- [ ] [Admin Account](#admin)
+  - [ ] Admin Dashboard
+  - [ ] Admin Profile
+  - [ ] 
+<a id="admin"/>
 ### Admin:
 - **C**reate new procedures
 - **R**ead existing procedures
