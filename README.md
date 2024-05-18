@@ -2,16 +2,16 @@
 ``made using php | ajax | bootstrap | jQuery | SQL``
 ***
 ## Features Includes:
-- [ ] [Admin Account](#admin)
-  -  Admin Dashboard
-  - [ ] Admin Profile
-  - [ ] View Client Appointments
-  - [ ] Edit Admins
-  - [ ] Edit Services
-- [ ] [Client Account](#client)
-  - [ ] Client Profile
-  - [ ] View Appointments
-  - [ ] Book Appointments
+- [Admin Account](#admin)
+  - Admin Dashboard
+  - Admin Profile
+  - View Client Appointments
+  - Edit Admins
+  - Edit Services
+- [Client Account](#client)
+  - Client Profile
+  - View Appointments
+  - Book Appointments
 -----
 <a name="admin" />
 
