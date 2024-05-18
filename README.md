@@ -2,13 +2,13 @@
 ``made using php | ajax | bootstrap | jQuery | SQL``
 ***
 ## Features Includes:
-- ##Admin Account
+- ## Admin Account
   - Admin Dashboard
   - Admin Profile
   - View Client Appointments
   - Edit Admins
   - Edit Services
-- ##Client Account
+- ## Client Account
   - Client Profile
   - View Appointments
   - Book Appointments
