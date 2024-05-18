@@ -3,7 +3,7 @@
 ***
 ## Features Includes:
 - [ ] [Admin Account](#admin)
-  - [ ] Admin Dashboard
+  -  Admin Dashboard
   - [ ] Admin Profile
   - [ ] View Client Appointments
   - [ ] Edit Admins
