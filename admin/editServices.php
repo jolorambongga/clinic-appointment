@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Edit Services</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
@@ -61,13 +61,13 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a href="editAdmins.php" class="sidebar-link">
-                <i class="fas fa-user-cog"></i>
-                <span>Edit Admins</span>
+              <a href="editDoctors.php" class="sidebar-link">
+                <i class="fas fa-user-md"></i>
+                <span>Edit Doctors</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a href="editServices.php" class="sidebar-link sidebar-link-active">
+              <a href="editServices.php" class="sidebar-link">
                 <i class="fas fa-cogs"></i>
                 <span>Edit Services</span>
               </a>
@@ -90,26 +90,36 @@
     </aside>
     <!-- main content -->
     <div class="main p-3">
+      <div class="text-center">
+        <h1>
+          <!-- Sidebar Bootstrap 5 -->
+        </h1>
+      </div>
       <!-- table -->
       <div class="container">
         <div class="table-container">
           <h1 class="table-title">Edit Services</h1>
-          <button class="btn btn-primary mb-3 float-end" type="button" data-bs-toggle="modal"
-            data-bs-target="#modalAddService">Add New Service</button>
+          <button class="btn btn-primary mt-3 mb-3 float-end" type="sbumit" name="submit">Add New Service</button>
           <table class="table table-striped table-hover">
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Procedure</th>
-                <th scope="col">Price</th>
+                <th scope="col">Procedure Name</th>
+                <th scope="col">Procedure Price</th>
+                <th scope="col">Contact Number</th>
+                <th scope="col">Role</th>
+                <th scope="col">Registered On</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>OB-GYNE</td>
-                <td>PHP 2000.00</td>
+                <td>johndoe</td>
+                <td>John A. Doe</td>
+                <td>+63 966-123-4567</td>
+                <td>Admin</td>
+                <td>2024-05-15 23:39:07</td>
                 <td>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-start text-center">
                     <button class="btn btn-success" type="button">Edit</button>
@@ -118,9 +128,12 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>CT-SCAN</td>
-                <td>PHP 5000.00</td>
+                <th scope="row">1</th>
+                <td>johndoe</td>
+                <td>John A. Doe</td>
+                <td>+63 966-123-4567</td>
+                <td>Junior Admin</td>
+                <td>2024-05-15 23:39:07</td>
                 <td>
                   <div class="d-grid gap-2 d-md-flex justify-content-md-start text-center">
                     <button class="btn btn-success" type="button">Edit</button>
@@ -131,30 +144,6 @@
               <!-- Add more rows as needed -->
             </tbody>
           </table>
-        </div>
-      </div>
-      <!-- modal -->
-      <div class="modal fade" id="modalAddService" tabindex="-1" aria-labelledby="modalAddService" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="modalAddService">Add New Service</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="mb-3">
-                <label for="inputServiceName" class="form-label">Service Name</label>
-                <input type="text" class="form-control" id="inputServiceName" placeholder="Enter service name">
-                <pre></pre>
-                <label for="inputServicePrice" class="form-label">Service Price</label>
-                <input type="text" class="form-control" id="inputServicePrice" placeholder="Enter service price">
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-              <button type="button" class="btn btn-success">Save</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>

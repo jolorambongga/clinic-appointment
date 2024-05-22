@@ -61,9 +61,9 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a href="editAdmins.php" class="sidebar-link">
-                <i class="fas fa-user-cog"></i>
-                <span>Edit Admins</span>
+              <a href="editDoctors.php" class="sidebar-link">
+                <i class="fas fa-user-md"></i>
+                <span>Edit Doctors</span>
               </a>
             </li>
             <li class="sidebar-item">
