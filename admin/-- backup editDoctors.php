@@ -111,7 +111,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <form id="addDoctor">
+                  <form id="frmAddDoctor">
                     <label for="doctorName" class="form-label">Doctor's Name</label>
                     <input type="text" id="doctorName" name="doctorName" class="form-control">
                     <pre></pre>
@@ -170,12 +170,35 @@
               </div>
               <div class="modal-footer">
                 <button type="button" id="editCancelBtn" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" id="editSaveBtn" class="btn btn-success">Save changes</button>
+                <button type="submit" id="editSaveBtn" class="btn btn-success">Save changes</button>
               </div>
             </div>
           </div>
         </div>
       </form>
+      <!-- end modal -->
+      <!-- modal delete doctor -->
+      <!-- <form id="frmDeleteDoctor"> -->
+      <div class="modal fade" id="modDeleteDoctor" tabindex="-1" aria-labelledby="modDeleteDoctorLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modDeleteDoctorLabel">Delete Doctor</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="delField" class="form-label">Type <b>"DELETE"</b> to confirm.</label>
+              <input type="text" id="delField" name="delField" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="delCancelBtn" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" id="delDeleteBtn" class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </form> -->
       <!-- end modal -->
     </div>
   </div>
@@ -187,6 +210,7 @@
   <script>
     $(document).ready(function () {
       loadDoctors();
+      // READ
       function loadDoctors() {
         $.ajax({
           type: 'GET',
@@ -201,7 +225,7 @@
           }
         });
       }
-
+      // GET
       $(document).on('click', '#btnEdit', function () {
         var doctorId = $(this).data('doctor-id');
         $.ajax({
@@ -218,7 +242,7 @@
           }
         });
       });
-
+      // CREATE
       $(document).on('click', '#addSaveBtn', function () {
         var doctorName = $('#doctorName').val();
         var doctorContact = $('#doctorContact').val();
@@ -237,13 +261,57 @@
           data: doctorData,
           dataType: 'json',
           success: function (response) {
+            $('#doctorName').val('');
+            $('#doctorContact').val('');
+            $('#doctorEmail').val('');
+            $('#doctorAddress').val('');
             console.log(response);
             loadDoctors();
+            $('#modAddDoctor .btn-close').click();
           },
           error: function (error) {
             console.log("ERROR: ", error);
           }
         });
+      });
+      // UPDATE
+      $('#frmEditDoctor').submit(function (e) {
+        e.preventDefault();
+        var formData = $(this).serialize();
+        $.ajax({
+          url: 'handles/updateDoctor.php',
+          method: 'POST',
+          data: formData,
+          success: function (response) {
+            console.log(response);
+            loadDoctors();
+            $('#modEditDoctor .btn-close').click();
+          }, error: function (error) {
+            console.log("ERROR: ", error);
+          }
+        });
+      });
+      // DELETE
+      $(document).on('click', '#btnDelete', function () {
+        var doctorId = $(this).data('doctor-id');
+        $(document).on('click', '#delDeleteBtn', function () {
+          var userInput = $('#delField').val();
+          $.ajax({
+            type: 'POST',
+            url: 'handles/deleteDoctor.php',
+            data: { doctorId: doctorId, userInput: userInput },
+            dataType: 'json',
+            success: function (response) {
+              console.log(response);
+              $('#delField').val('');
+              loadDoctors();
+              $('#modDeleteDoctor .btn-close').click();
+            },
+            error: function (error) {
+              console.log("ERROR: ", error);
+            }
+          });
+        })
       });
 
     });

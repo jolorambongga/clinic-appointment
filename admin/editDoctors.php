@@ -177,6 +177,29 @@
         </div>
       </form>
       <!-- end modal -->
+      <!-- modal delete doctor -->
+      <!-- <form id="frmDeleteDoctor"> -->
+      <div class="modal fade" id="modDeleteDoctor" tabindex="-1" aria-labelledby="modDeleteDoctorLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modDeleteDoctorLabel">Delete Doctor</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="delField" class="form-label">Type <b>"DELETE"</b> to confirm.</label>
+              <input type="text" id="delField" name="delField" class="form-control">
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="delCancelBtn" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" id="delDeleteBtn" class="btn btn-danger">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </form> -->
+      <!-- end modal -->
     </div>
   </div>
   <!-- end wrapper -->
@@ -238,13 +261,13 @@
           data: doctorData,
           dataType: 'json',
           success: function (response) {
-            $('#frmAddDoctor').data('ds-dismiss-modal');
             $('#doctorName').val('');
             $('#doctorContact').val('');
             $('#doctorEmail').val('');
             $('#doctorAddress').val('');
             console.log(response);
             loadDoctors();
+            $('#modAddDoctor .btn-close').click();
           },
           error: function (error) {
             console.log("ERROR: ", error);
@@ -262,10 +285,33 @@
           success: function (response) {
             console.log(response);
             loadDoctors();
-          }, error: function(error) {
+            $('#modEditDoctor .btn-close').click();
+          }, error: function (error) {
             console.log("ERROR: ", error);
           }
         });
+      });
+      // DELETE
+      $(document).on('click', '#btnDelete', function () {
+        var doctorId = $(this).data('doctor-id');
+        $(document).on('click', '#delDeleteBtn', function () {
+          var userInput = $('#delField').val();
+          $.ajax({
+            type: 'POST',
+            url: 'handles/deleteDoctor.php',
+            data: { doctorId: doctorId, userInput: userInput },
+            dataType: 'json',
+            success: function (response) {
+              console.log(response);
+              $('#delField').val('');
+              loadDoctors();
+              $('#modDeleteDoctor .btn-close').click();
+            },
+            error: function (error) {
+              console.log("ERROR: ", error);
+            }
+          });
+        })
       });
 
     });
