@@ -1,20 +1,31 @@
 <?php
 
-require_once('../../includes/config.php');
+require_once ('../../includes/config.php');
 
-try { 
+try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "SELECT * FROM tbl_procedures";
+    $sql = "SELECT p.procedureId, p.procedureName, p.doctorId, p.procedurePrice, d.doctorName
+            FROM tbl_procedures p
+            LEFT JOIN tbl_Doctors d ON p.doctorId = d.doctorId";
     $stmt = $pdo->query($sql);
 
-    $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $procedures = array();
 
-    if (count($services) > 0) {
-        echo json_encode($services);
-    } else {
-        echo json_encode([]);
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $procedures[] = array(
+            'procedureId' => $row['procedureId'],
+            'procedureName' => $row['procedureName'],
+            'doctorId' => $row['doctorId'],
+            'procedurePrice' => $row['procedurePrice'],
+            'doctorName' => $row['doctorName'],
+        );
     }
+
+    header('Content-Type: application/json');
+    echo json_encode($procedures);
+
 } catch (PDOException $e) {
-    echo "Error: " . $e->getMessage();
+    http_response_code(500);
+    echo json_encode(array('error' => $e->getMessage()));
 }
