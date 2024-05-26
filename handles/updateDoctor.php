@@ -10,7 +10,7 @@ try {
     $doctorEmail = $_POST['doctorEmail'];
     $doctorAddress = $_POST['doctorAddress'];
 
-    $sql = "UPDATE tbl_Doctors SET  doctorName = ?, doctorContact = ?, doctorEmail = ?, doctorAddress = ? WHERE doctorId = ?";
+    $sql = "UPDATE tbl_Doctors SET  doctorName = ?, doctorContact = ?, doctorEmail = ?, doctorAddress = ? WHERE doctorId = ?;";
 
     $stmt = $pdo->prepare($sql);
 
@@ -22,7 +22,6 @@ try {
 
     $stmt->execute();
 
-    // You might want to send a response back
     echo json_encode(["status" => "successfully update record"]);
     
 } catch (PDOException $e) {
