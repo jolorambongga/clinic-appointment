@@ -276,8 +276,6 @@
               const selectedDoctorId = $(this).data('doctor-id');
               $('#eSelectedDoctor').text(selectedDoctor);
               $('#eSelectedDoctorId').val(selectedDoctorId);
-              console.log(selectedDoctor);
-              console.log(selectedDoctorId);
             });
 
           });
@@ -396,7 +394,7 @@
       console.log(procedureId);
       var serviceData = {
         procedureId : procedureId,
-        procedureName: procedureName,
+        procedureName : procedureName,
         procedurePrice : procedurePrice,
         doctorId : doctorId
       };
